@@ -45,7 +45,7 @@ db.products.find({
     score: {
         $meta: "textScore"
     }
-})
+});
 
 // select _id, name, price, category, tags[0,2] from products
 db.products.find({}, {

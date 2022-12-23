@@ -6,7 +6,7 @@ db.sessions.createIndex({
     createdAt: 1
 }, {
     expireAfterSeconds: 10
-})
+});
 
 // Will expire after 10 seconds, but background job run every 60 seconds
 db.sessions.insertOne({
@@ -24,7 +24,7 @@ db.customers.updateMany({}, [
             }
         }
     }
-])
+]);
 
 // Create unique index
 db.customers.createIndex({

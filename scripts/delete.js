@@ -30,4 +30,4 @@ db.customers.deleteMany({
     _id: {
         $regex: "spammer"
     }
-})
+});

@@ -10,7 +10,7 @@ db.createUser(
             { role: "read", db: "test" }
         ]
     }
-)
+);
 
 // connect using
 // mongo --username contoh --password contoh --authenticationDatabase test
@@ -24,19 +24,19 @@ db.createUser(
             { role: "readWrite", db: "test" }
         ]
     }
-)
+);
 
 // connect using
 // mongo --username contoh2 --password contoh2 --authenticationDatabase test
 
 // Get all users
-db.getUsers()
+db.getUsers();
 
 // Change password for user contoh
-db.changeUserPassword("contoh", "rahasia")
+db.changeUserPassword("contoh", "rahasia");
 
 // Drop user contoh
-db.dropUser("contoh")
+db.dropUser("contoh");
 
 // Update user
 db.updateUser("contoh2",
@@ -45,4 +45,4 @@ db.updateUser("contoh2",
             { role: "readWrite", db: "test" }
         ]
     }
-)
+);

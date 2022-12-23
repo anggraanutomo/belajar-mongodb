@@ -34,7 +34,7 @@ db.products.updateMany({
     $set: {
         tags: ["food"]
     }
-})
+});
 
 // update products set wrong = "wrong"
 db.products.updateMany({}, [

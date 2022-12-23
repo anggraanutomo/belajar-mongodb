@@ -41,7 +41,7 @@ db.products.updateMany({}, {
             } 
         } 
     ]
-})
+});
 
 // update element of array with given index
 db.products.updateMany({}, {
@@ -81,21 +81,21 @@ db.products.updateMany({}, {
             $gte: 80
         }
     }
-})
+});
 
 // add 100 to ratings
 db.products.updateMany({}, {
     $push: {
         ratings: 100
     }
-})
+});
 
 // remove element 100 
 db.products.updateMany({}, {
     $pullAll: {
         ratings: [100]
     }
-})
+});
 
 // add 100, 200, 300 to ratings
 db.products.updateMany({},{
@@ -104,7 +104,7 @@ db.products.updateMany({},{
             $each: [100, 200, 300]
         }
     }
-})
+});
 
 // add trending, popular to tags
 db.products.updateMany({},{
@@ -113,7 +113,7 @@ db.products.updateMany({},{
             $each: ["trending", "popular"]
         }
     }
-})
+});
 
 // add hot in posititon 1
 db.products.updateMany({},{
@@ -123,7 +123,7 @@ db.products.updateMany({},{
             $position: 1
         }
     }
-})
+});
 
 // add all element, but limit with slice
 db.products.updateMany({},{
@@ -133,7 +133,7 @@ db.products.updateMany({},{
             $slice: -5
         }
     }
-})
+});
 
 // add all element, and sort desc
 db.products.updateMany({},{
@@ -143,4 +143,4 @@ db.products.updateMany({},{
             $sort: -1
         }
     }
-})
+});

@@ -8,7 +8,7 @@ rs.initiate(
       { _id : 2, host : "mongo3:27017" }
     ]
   }
-)
+);
 
 // Create collection
 db.createCollection("products");

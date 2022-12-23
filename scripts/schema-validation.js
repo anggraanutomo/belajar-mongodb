@@ -39,7 +39,7 @@ db.createCollection("merchants", {
             }
         }
     }
-})
+});
 
 // Insert valid document
 db.merchants.insertOne({
@@ -52,7 +52,7 @@ db.merchants.insertOne({
         city: "Jakarta",
         country: "Indonesia"
     }
-})
+});
 
 // Inser Invalid document: Name is blank
 db.merchants.insertOne({
@@ -64,7 +64,7 @@ db.merchants.insertOne({
         city: "Jakarta",
         country: "Indonesia"
     }
-})
+});
 
 // Inser Invalid document: Address City is blank
 db.merchants.insertOne({
@@ -76,7 +76,7 @@ db.merchants.insertOne({
         street: "Jalan Raya Belum Jadi",
         country: "Indonesia"
     }
-})
+});
 
 // Add validator to customers collection
 db.runCommand({
@@ -94,4 +94,4 @@ db.runCommand({
             }
         }
     }
-})
+});

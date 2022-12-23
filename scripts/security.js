@@ -10,7 +10,7 @@ db.createUser(
             "readWriteAnyDatabase" 
         ]
     }
-)
+);
 
 // Connect to mongodb with username & password
 // mongo --username mongo --password mongo --host localhost --port 27017

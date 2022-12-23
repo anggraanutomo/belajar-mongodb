@@ -34,4 +34,4 @@ db.orders.insertOne({
             quantity: new NumberInt(2)
         }
     ]
-})
+});

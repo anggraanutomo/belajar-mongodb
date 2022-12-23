@@ -3,7 +3,7 @@ db.customers.updateMany({}, {
     $rename: {
         name: "full_name"
     }
-})
+});
 
 // update products set stock = stock + 10
 db.products.updateMany({}, {

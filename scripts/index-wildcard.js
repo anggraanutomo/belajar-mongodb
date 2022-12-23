@@ -29,7 +29,7 @@ db.customers.insertMany([
             passion: "Entepreneur"
         }
     }
-])
+]);
 
 // Debug wildcard index
 db.customers.find({
